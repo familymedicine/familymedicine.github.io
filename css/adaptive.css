@@ -26,7 +26,7 @@
 
 .main_info {
   padding: 33px calc(15px + 2 * ((100vw - 420px) / 860)) 45px calc(15px + 130 * ((100vw - 1020px) / 860));
-  height: 100vh;
+  height: 60vh;
 }
 
 .case_cards {
@@ -87,6 +87,30 @@
   font-size: calc(1vw + 8px);
   /* */
 }
+.main {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+#main .title {
+  width: calc(550px + 300 * ((100vw - 1020px) / 860));
+  color: #1D2D3D;
+  font-size: calc(35px + 30 * ((100vw - 420px) / 860));
+  line-height: calc(35px + 30 * ((100vw - 420px) / 860));
+  font-weight: 900;
+}
+
+#main .subtitle {
+  width: auto;
+  word-wrap: break-word;
+  color: #888FAA;
+  font-weight: 600;
+  font-size: calc(14px + 6 * ((100vw - 420px) / 860));
+  padding: 20px 5% 0 0;
+}
+  h2{
+  padding: 0px calc(25px + 100 * ((100vw - 420px) / 860)) 0 calc(25px + 40 * ((100vw - 420px) / 860));
+}
 
 }
 /* Extra Small Devices, Phones */
@@ -113,14 +137,46 @@
 }
 /* Small Devices, Tablets */
 @media only screen and (min-width: 768px) {
+
+h2{
+  padding: 0px calc(25px + 100 * ((100vw - 420px) / 860)) 0 calc(25px + 40 * ((100vw - 420px) / 860));
+}
+
 .menu {
   display: none;
+}
+
+.vector_app {
+  display: none;
+}
+.over_header {
+  padding: 0 calc(25px + 2 * ((100vw - 420px) / 860)) 0 calc(25px + 2 * ((100vw - 1020px) / 860));
+}
+
+.header {
+  padding: 0 calc(25px + 2 * ((100vw - 420px) / 860)) 0 calc(25px + 2 * ((100vw - 1020px) / 860));
 }
   /* */
 }
 /* Medium Devices, Desktops */
 @media only screen and (min-width: 992px) {
+
+h2{
+  padding: 0 0 0 0;
+}
+
+.over_header {
+  padding: 0 calc(45px + 2 * ((100vw - 420px) / 860)) 0 calc(45px + 2 * ((100vw - 1020px) / 860));
+}
+
+.header {
+  padding: 0 calc(45px + 2 * ((100vw - 420px) / 860)) 0 calc(45px + 2 * ((100vw - 1020px) / 860));
+}
+
+.main {
+  padding: 50px calc(125px + 100 * ((100vw - 420px) / 860)) 0 calc(45px + 40 * ((100vw - 420px) / 860));
   /* */
+}
 }
 /* Large Devices, Wide Screens */
 @media only screen and (min-width: 1200px) {

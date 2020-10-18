@@ -259,13 +259,30 @@ a {
   padding: 35px calc(25px + 100 * ((100vw - 420px) / 860)) 0 calc(25px + 40 * ((100vw - 420px) / 860));
 }
 
+.vector_app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #CBE0FF;
+  border-radius: 50px;
+  width: 100%;
+}
+
+.vector_app img{
+  width: calc(75px + 40vw);
+  margin-left: 10px;
+}
+
+.pandemic {
+  fill: #fff;
+}
+
 .main_info {
   display: flex;
   flex-flow: column;
   justify-content: center;
   width: 100%;
   height: calc(375px + 100 * ((100vw - 420px) / 860));
-  padding: 0 0 0 5%;
 }
 
 #main .title {
@@ -369,7 +386,7 @@ a {
   width: 100%;
   height: auto;
   background: #F6F6F6;
-  padding: 55px calc(15px + 2 * ((100vw - 420px) / 860)) 45px calc(15px + 130 * ((100vw - 1020px) / 860));
+  padding: 33px calc(15px + 2 * ((100vw - 420px) / 860)) 45px calc(15px + 130 * ((100vw - 1020px) / 860));
   margin-top: 45px;
 }
 
@@ -385,7 +402,6 @@ h2{
   font-weight: 900;
   font-family: 'Open Sans' sans-serif;
   line-height: 45px;
-  margin-left: calc(12px + 8 * ((100vw - 220px) / 860));
 }
 
 .case_cards {
