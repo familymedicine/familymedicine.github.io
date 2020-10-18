@@ -9,6 +9,21 @@
 }
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
+  .main_info {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  }
+
+  .video_call {
+  display: none;;
+}
+
+
+#category {
+  padding: 33px calc(15px + 2 * ((100vw - 420px) / 860)) 45px calc(15px + 130 * ((100vw - 1020px) / 860));
+  margin-top: 0px;
+}
   /* */
 }
 /* Extra Small Devices, Phones */
