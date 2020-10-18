@@ -101,7 +101,7 @@ a {
   align-items: center;
   width: 100%;
   height: calc(35px + 10 * ((100vw - 420px) / 860));
-  padding: 0 0 0 50px;
+  padding: 0 calc(15px + 2 * ((100vw - 420px) / 860)) 0 calc(20px + 2 * ((100vw - 1020px) / 860));
   border-bottom: 3px solid #F5F8FB;
   margin-bottom: 15px;
   font-size: calc(9px + 5 * ((100vw - 420px) / 860));
@@ -128,17 +128,17 @@ a {
 .header {
   display: flex;
   flex-flow: row nowrap;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
-  height: 50px;
-  padding: 0 50px 0 50px;
+  height: auto;
+  padding: 0 calc(15px + 2 * ((100vw - 420px) / 860)) 0 calc(15px + 2 * ((100vw - 1020px) / 860));
 }
 
 .logo {
   display: flex;
   justify-content: flex-start;
   flex-flow: row nowrap;
-  width: 15%;
 }
 
 .logo_icon {
@@ -170,6 +170,12 @@ a {
 .nav {
   display: flex;
   width: 70%;
+  position: relative;
+  opacity: 1;
+}
+
+.nav.active {
+  display: block;
 }
 
 .nav_list {
@@ -177,6 +183,7 @@ a {
   flex-flow: row nowrap;
   justify-content: flex-start;
   text-transform: capitalize;
+  background: none;
   width: 100%;
 }
 
@@ -195,10 +202,14 @@ a {
   color: #3285FF;
 }
 
-.user_name {
+.login {
   display: flex;
+  flex-flow: row wrap;
   justify-content: flex-end;
-  width: 15%;
+}
+
+.login.active {
+  display:  block;
 }
 
 .case_log {
@@ -207,23 +218,39 @@ a {
   align-items: center;
   text-transform: capitalize;
   font-weight: 700;
+  width: 100%;
+  height: 100%;
 }
 
 .sign a {
   color: #3E4B58;
   white-space: nowrap;
   margin-right: 15px;
+  font-size: 16px;
 }
 
 .join {
   display: flex;
   justify-content: center;
   align-items: center;
+  white-space: nowrap;
   width: calc(70px + 20 * ((100vw - 420px) / 860));
   height: calc(35px + 10 * ((100vw - 1020px) / 860));
   color: white;
+  font-size: 16px;
   background: #247CFF;
   border-radius: 5px;
+}
+
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  font-size: 24px;
+  width: 100%;
+  color: #3285FF;
+  padding: 0 15px 0 15px;
+  z-index: 999;
 }
 
 .main {
