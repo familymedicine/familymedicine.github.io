@@ -24,10 +24,18 @@
   padding: 33px calc(15px + 2 * ((100vw - 420px) / 860)) 45px calc(15px + 130 * ((100vw - 1020px) / 860));
   margin-top: 0px;
 }
+
+.main_info {
+  height: 100vh;
+}
   /* */
 }
 /* Extra Small Devices, Phones */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 480px) 
+  {
+    .case_cards {
+    justify-content: space-around;
+  }
   /* */
 }
 /* Custom, iPhone Retina */
