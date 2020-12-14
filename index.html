@@ -1,256 +1,275 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>FamilyMedicine</title>
+	<!-- link -->
+	<link rel="stylesheet" href="css/style.css">
 
-	<!--link-->
-	<link rel="stylesheet" href="../css/main.css">
-	<link rel="stylesheet" href="css/adaptive.css">
-	<link rel="stylesheet" href="../font-awesome/css/all.min.css">
+	<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+	<!-- libs -->
+	<script src="js/script.js" defer></script>
 </head>
+
 <body>
-	<section id="main" id="home">
-		<div class="container wrappper_header">
-			<div class="row over_header">
-				<div class="number">
-					<i class="fas fa-phone-alt"></i>
-					<a href="#number">8 800 5555 3535</a>
+	<main class="page">
+		<header class="header">
+			<div class="header__row">
+				<div class="header__logo logo">
+					<a href="#" class="logo__body">
+						<div class="logo__icon">
+							<i class='bx bx-donate-heart'></i>
+						</div>
+						<span class="logo__text">
+							FamilyMedicine
+						</span>
+					</a>
 				</div>
-				<div class="mail">
-					<i class="fas fa-envelope"></i>
-					<a href="#mail">info@familymedicine.com</a>
-				</div>
+				<nav class="header__menu menu">
+					<div class="menu__body">
+						<ul class="menu__list">
+							<li>
+								<a href="#main" class="menu__link">Home</a>
+								<a href="#category" class="menu__link">Category</a>
+								<a href="#booking" class="menu__link">Booking</a>
+								<a href="#emergency" class="menu__link">Emergency</a>
+								<a href="#chat" class="menu__link">Live Chat</a>
+							</li>
+						</ul>
+						<div class="menu__button button-log">
+							<a href="#" class="button-log__body">
+								<span class="button-log__text">
+									Увійти
+								</span>
+							</a>
+						</div>
+					</div>
+					<div class="menu__icon icon-menu">
+						<i class='bx bx-menu'></i>
+					</div>
+				</nav>
 			</div>
-			<div class="row header">
-				<div class="logo">
-					<div class="logo_icon"><i class="fas fa-heartbeat"></i></div>
-					<div class="case_title">
-						<div class="logo_title">family</div>
-						<div class="logo_subtitle">medicine</div>
+		</header>
+		<div class="main" id="main">
+			<div class="main__wrap">
+				<div class="main__row">
+					<div class="main__column">
+						<div class="main__article article">
+							<span class="article__title">
+								Lorem ipsum dolor sit amet, consectetur
+							</span>
+							<span class="article__subtitle">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus enim ac vestibulum
+								efficitur. Integer gravida dolor at commodo dictum. Ut sed odio varius, rutrum ex nec, laoreet
+								felis.
+							</span>
+							<div class="article__button button">
+								<a href="#" class="button__body">
+									<div class="button__icon">
+										<i class='bx bxl-play-store'></i>
+									</div>
+									<span class="button__text">
+										Download Now
+									</span>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="main__column">
+						<div class="main__image">
+							<img src="../image/main-image.svg" alt="main">
+						</div>
 					</div>
 				</div>
-				<div class="nav">
-					<ul class="nav_list">
-						<li><a href="#home">home</a></li>
-						<li><a href="#category">category</a></li>
-						<li><a href="#booking">booking</a></li>
-						<li><a href="#emergency">emergency</a></li>
-						<li><a href="#chat">live chat</a></li>
-					</ul>
-				</div>
-				<div class="login">
-					<div class="case_log">
-						<div class="sign"><a href="#log">sign in</a></div>
-						<a href="#join"><div class="join">join now</div></a>
-					</div>
-				</div>
-				<div class="menu">
-					<i class="fas fa-bars"></i>
-				</div>
 			</div>
+
 		</div>
-		<div class="container">
-			<div class="row main">
-				<div class="vector_app">
-					<img src="../icon/pandemic.svg" alt="man" class="pandemic">
-				</div>
-				<div class="main_info">
-					<span class="title">
-						Lorem ipsum sit 
-						amet <span>consectetur</span> 
-						adipisicing <span>elit</span>
-					</span>
-					<div class="subtitle">Lorem ipsum, dolor sit, amet consectetur adipisicing elit. Voluptas iusto obcaecati aperiam, and commodi consequuntur minima.</div>
-					<div class="download_app">
-						<a href="#app">
-							<div class="app">
-								Download app
-							</div>
-						</a>
-					</div>
-				</div>
-				<div class="video_call">
-					<div class="layer_video">
-					<div class="video" data-vide-bg="../video/doctor">
-						<div class="case_top">
-							<i class="fas fa-volume-mute volume"></i>
-							<div class="time">
-								00:54 / 00:54
-							</div>
-						</div>
-						<div class="case_bottom">
-							<div class="doctor_name">
-								Dr. George Yang
-							</div>
-							<div class="video_logo"><i class="fas fa-heartbeat"></i>
-							</div>
-						</div>
-					</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section id="category">
-		<div class="container">
-			<div class="row carousel">
-				<h2>Explore by <br>category</h2>
-				<div class="case_cards">		
-					<div class="card">
-						<div class="card_icon">
-							<i class="fas fa-user-md"></i>
-						</div>
-						<span class="card_title">
-							doctors
+
+		<section class="category" id="category">
+			<div class="category__row">
+				<div class="category__column">
+					<div class="category__heading heading">
+						<span class="heading__title">
+							Explore by category
 						</span>
-						<span class="card_info">
-							Lorem ipsum dolor, sit amet consectetur
-						</span>
-					</div>
-					<div class="card active">
-						<div class="card_icon">
-							<i class="fas fa-briefcase-medical"></i>
-						</div>
-						<span class="card_title">
-							products
-						</span>
-						<span class="card_info">
-							Lorem ipsum dolor, sit amet consectetur
-						</span>
-					</div>
-					<div class="card">
-						<div class="card_icon">
-							<i class="fas fa-headset"></i>
-						</div>
-						<span class="card_title">
-							support
-						</span>
-						<span class="card_info">
-							Lorem ipsum dolor, sit amet consectetur
-						</span>
-					</div>
-					<div class="card">
-						<div class="card_icon">
-							<i class="fas fa-virus"></i>
-						</div>
-						<span class="card_title">
-							covid-19
-						</span>
-						<span class="card_info">
-							Lorem ipsum dolor, sit amet consectetur
+						<span class="heading__content content">
+							Lorem ipsum dolor sit
 						</span>
 					</div>
 				</div>
-			</div>
-		</div>
-	</section>
-	<section id="booking">
-		<div class="container">
-			<div class="row meeting">
-				<div class="appointment">
-						<div class="desk">
-							<div id="calendar">
-							  <div class="hat">
-							  	<h2>september</h2>
-							  	<h1>october</h1> 
-							  	<h2>novermber</h2>
-							  </div>
-							  <table>
-							    <tr><td class="lastmonth">30</td><td>1</td><td>2</td><td>3</td><td class="hastask">4</td><td>5</td><td>6</td></tr>
-							    <tr><td>7</td><td class="current">8</td><td class="hastask">9</td><td>10</td><td>11</td><td class="hastask">12</td><td>13</td></tr>
-							    <tr><td>14</td><td class="hastask">15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td></tr>
-							    <tr><td class="hastask">21</td><td>22</td><td>23</td><td>24</td><td>25</td><td class="hastask">26</td><td>27</td></tr>
-							    <tr><td>28</td><td>29</td><td class="hastask">30</td><td>31</td><td class="nextmonth">1</td><td>2</td><td>3</td></tr>
-							  </table>
+				<div class="category__column">
+					<div class="category__cards cards">
+						<div class="item-cards">
+							<div class="item-cards__icon">
+								<i class='bx bx-pin'></i>
 							</div>
-							<div class="database">
-								<div class="block_data">
-									<div class="case_data">
-										<h1>
-											date
-										</h1>
-										<h2>
-											20 October 2020
-										</h2>
-									</div>
-									<div class="case_data">
-										<h1>
-											time
-										</h1>
-										<h2>
-											9:30
-										</h2>
-									</div>
-									<div class="select_data">
-										<span>edit</span>
-									</div>
-								</div>
-								<div class="block_data">
-									<div class="case_data">
-										<h1>
-											date
-										</h1>
-										<h2>
-											20 October 2020
-										</h2>
-									</div>
-									<div class="case_data">
-										<h1>
-											time
-										</h1>
-										<h2>
-											9:30
-										</h2>
-									</div>
-									<div class="select_data">
-										<span>cancel</span>
-									</div>
-								</div>
+							<div class="item-cards__title">
+								Lorem
+							</div>
+							<div class="item-cards__content content">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lacus nulla
 							</div>
 						</div>
-					<div class="wrapper_seeing">
-						<div class="date">
-							<div class="case_time">8:30</div>
-							<div class="case_time selected">9:30</div>
-							<div class="case_time">10:30</div>
-						</div>
-						<div class="case_select">
-							<div class="doctor_photo">
-								<img src="img/doctor_1.jpg" alt="doctor#1">
+						<div class="item-cards">
+							<div class="item-cards__icon">
+								<i class='bx bx-pin'></i>
 							</div>
-							<div class="doctor_info">
-								<h3>Dr. Yanna Brusnik</h3>
-								<span>Lorem ipsum, dolor.</span>
+							<div class="item-cards__title">
+								Lorem
 							</div>
-							<div class="select_button">
-									<span>select</span>
+							<div class="item-cards__content content">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lacus nulla
 							</div>
 						</div>
-						<div class="case_select">
-							<div class="doctor_photo">
-								<img src="img/doctor_2.jpg" alt="doctor#1">
+					</div>
+					<div class="category__cards cards">
+						<div class="item-cards">
+							<div class="item-cards__icon">
+								<i class='bx bx-pin'></i>
 							</div>
-							<div class="doctor_info">
-								<h3>Dr. Andrey Mitrofa</h3>
-								<span>Lorem ipsum, dolor.</span>
+							<div class="item-cards__title">
+								Lorem
 							</div>
-							<div class="select_button">
-								<span>select</span>
+							<div class="item-cards__content content">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lacus nulla
+							</div>
+						</div>
+						<div class="item-cards">
+							<div class="item-cards__icon">
+								<i class='bx bx-pin'></i>
+							</div>
+							<div class="item-cards__title">
+								Lorem
+							</div>
+							<div class="item-cards__content content">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lacus nulla
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="row">
-				me
+		</section>
+		<section class="information" id="emergency">
+			<div class="container">
+				<div class="information__row information__row_reverse">
+					<div class="information__column">
+						<div class="information__heading heading">
+							<span class="heading__title">
+								Emergency
+							</span>
+							<span class="heading__content content">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lacus nulla, porttitor ac
+								ultricies ut, consequat ac augue. Integer ac suscipit justo, ac iaculis felis. Mauris nec
+								tincidunt
+								sem.
+							</span>
+						</div>
+
+					</div>
+					<div class="information__column">
+						<div class="information__image">
+							<img src="../image/sos.svg" alt="">
+						</div>
+					</div>
+				</div>
 			</div>
-		</div>
-	</section>
-	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-	<script src="../js/jquery.vide.min.js"></script>
-	<script src="../js/jquery.min.js"></script>
-	<script src="js/main.js"></script>
+		</section>
+		<section class="booking" id="booking">
+			<div class="container">
+				<div class="layout">
+					<div class="booking__row">
+						<div class="booking__column">
+							<div class="booking__heading heading">
+								<span class="heading__title">
+									Lorem ipsum dolor sit amet consectetur
+								</span>
+							</div>
+						</div>
+						<div class="booking__column">
+							<span class="heading__content content">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus enim ac vestibulum
+								efficitur.
+								Integer gravida dolor at commodo dictum. Ut sed odio varius, rutrum ex nec, laoreet felis.
+							</span>
+							<div class="booking__button button-log">
+								<a href="#" class="button-log__body">
+									<span class="button-log__text">
+										Розпочати
+									</span>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="booking__row">
+						<div class="booking__image">
+							<img src="../image/booking.svg" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="information">
+			<div class="container">
+				<div class="information__row information__row_reverse">
+					<div class="information__column">
+						<div class="information__heading heading">
+							<span class="heading__title">
+								Information
+							</span>
+							<span class="heading__content content">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lacus nulla, porttitor ac
+								ultricies ut, consequat ac augue. Integer ac suscipit justo, ac iaculis felis. Mauris nec
+								tincidunt sem.
+							</span>
+						</div>
+
+					</div>
+					<div class="information__column">
+						<div class="information__image">
+							<img src="../image/info.svg" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="app" id="chat">
+			<div class="container">
+				<div class="app__row">
+					<div class="app__column">
+						<div class="app__article article">
+							<span class="article__title">
+								Lorem ipsum dolor sit amet, consectetur
+							</span>
+							<span class="article__subtitle">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus enim ac vestibulum
+								efficitur. Integer gravida dolor at commodo dictum. Ut sed odio varius, rutrum ex nec, laoreet
+								felis.
+							</span>
+							<div class="article__button button">
+								<a href="#" class="button__body">
+									<div class="button__icon">
+										<i class='bx bxl-play-store'></i>
+									</div>
+									<span class="button__text">
+										Download Now
+									</span>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="app__column">
+						<div class="app__image">
+							<img src="image/phone.svg" alt="">
+						</div>
+						<div class="app__circle circle"></div>
+
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
 </body>
+
 </html>
